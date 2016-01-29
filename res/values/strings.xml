@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Couple</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sub_activity1">SubActivity1</string>
+    <string name="title_activity_sub_activity2">SubActivity2</string>
+    <string name="title_activity_option">OptionActivity</string>
+    <string name="title_activity_sub_activity1_1">SubActivity1_1</string>
+    <string name="title_activity_sub_activity2_1">SubActivity2_1</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_sub1_history">Sub1HistoryActivity</string>
+    <string name="title_activity_sub2_history">Sub2HistoryActivity</string>
+
+</resources>

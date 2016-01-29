@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sub1_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yesi.couple.SubActivity1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:weightSum="7" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" 
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sub_left"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:weightSum="6" 
+                android:layout_margin="5dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:id="@+id/myNameTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="나의 이름"
+					android:textSize="25dp"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/myNameEditTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:ems="10"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/myAgeTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="나이"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/myAgeEditTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sub_right"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:weightSum="6" 
+                android:layout_margin="5dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:id="@+id/yourNameTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="상대의 이름"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp"/>
+
+                <EditText
+                    android:id="@+id/yourNameEditTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:ems="10"
+                    android:padding="5dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/yourAgeTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="나이"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/yourAgeEditTxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sub1_1Btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/sub_button"
+            android:onClick="onClickSub1_1Btn" />
+
+    </LinearLayout>
+
+</RelativeLayout>
