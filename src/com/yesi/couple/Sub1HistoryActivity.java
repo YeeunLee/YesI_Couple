@@ -7,6 +7,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -16,18 +18,24 @@ public class Sub1HistoryActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sub1_history);
-	
+
 		final SQLiteDBListHelper helper = new SQLiteDBListHelper(this);
 		final List<TableSub1> historyList = helper.selectAllSub1();
 		ArrayList<String> historyStrings = new ArrayList<String>();
 
 		for (TableSub1 tmp : historyList) {
-			historyStrings.add(tmp.getMyName() + " ¢½ " + tmp.getYourName()
+			historyStrings.add(tmp.getMyName() + " â™¡ " + tmp.getYourName()
 					+ " = " + tmp.getResult());
 		}
 
 		final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, historyStrings);
+				android.R.layout.simple_list_item_1, historyStrings){
+			@Override
+			public View getView(int position, View convertView, ViewGroup parent) {
+
+				return super.getView(position, convertView, parent);
+			}
+		};
 
 		ListView listView = (ListView) findViewById(R.id.listView);
 		listView.setAdapter(adapter);

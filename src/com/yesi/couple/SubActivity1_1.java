@@ -35,7 +35,7 @@ public class SubActivity1_1 extends Activity {
 		Algorithm al = new Algorithm();
 		String result = al.message(myName, yourName);
 
-		resultTxt.setText(myName + "°ú " + yourName + "Àº\n" + result);
+		resultTxt.setText(myName + "ê³¼ " + yourName + "ì€\n" + result);
 
 		SQLiteDBListHelper helper = new SQLiteDBListHelper(this);
 
@@ -105,12 +105,12 @@ public class SubActivity1_1 extends Activity {
 	private void shareImge(File img) {
 		// TODO Auto-generated method stub
 		
-		Uri mSaveImageUri = Uri.fromFile(img); // fileÀÇ °æ·Î¸¦ uri·Î º¯°æ
-		Intent intent = new Intent(Intent.ACTION_SEND); // Àü¼Û ¸Ş¼Òµå¸¦ È£Ãâ.
+		Uri mSaveImageUri = Uri.fromFile(img); // fileì˜ ê²½ë¡œë¥¼ urië¡œ ë³€ê²½
+		Intent intent = new Intent(Intent.ACTION_SEND); // ì „ì†¡ ë©”ì†Œë“œë¥¼ í˜¸ì¶œ.
 														// Intent.ACTION_SEND
-		intent.setType("image/jpeg"); // jpg ÀÌ¹ÌÁö¸¦ °øÀ¯ ÇÏ±â À§ÇØ TypeÀ» Á¤ÀÇ
-		intent.putExtra(Intent.EXTRA_STREAM, mSaveImageUri); // »çÁøÀÇ Uri¸¦ °¡Áö°í ¿È
-		startActivity(Intent.createChooser(intent, "Choose")); // Activity¸¦ ÀÌ¿ëÇÏ¿©
-																// È£Ãâ
+		intent.setType("image/jpeg"); // jpg ì´ë¯¸ì§€ë¥¼ ê³µìœ  í•˜ê¸° ìœ„í•´ Typeì„ ì •ì˜
+		intent.putExtra(Intent.EXTRA_STREAM, mSaveImageUri); // ì‚¬ì§„ì˜ Urië¥¼ ê°€ì§€ê³  ì˜´
+		startActivity(Intent.createChooser(intent, "Choose")); // Activityë¥¼ ì´ìš©í•˜ì—¬
+																// í˜¸ì¶œ
 	}
 }

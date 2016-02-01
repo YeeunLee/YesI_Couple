@@ -22,7 +22,7 @@ public class Sub2HistoryActivity extends Activity {
 		ArrayList<String> historyStrings = new ArrayList<String>();
 
 		for (TableSub2 tmp : historyList) {
-			historyStrings.add(tmp.getMyName() + " ¢½ " + tmp.getYourName()
+			historyStrings.add(tmp.getMyName() + " â™¡ " + tmp.getYourName()
 					+ " = " + tmp.getResult());
 		}
 		

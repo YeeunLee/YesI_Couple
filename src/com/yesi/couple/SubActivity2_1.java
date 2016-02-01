@@ -33,16 +33,16 @@ public class SubActivity2_1 extends Activity {
 		
 		if(myPercent>yourPercent)
 		{
-			result = myName+"(ÀÌ)°¡ "+yourName+"À»/¸¦ \n´õ ÁÁ¾ÆÇÏÁö·Õ~";
+			result = myName+"(ì´)ê°€ "+yourName+"ì„/ë¥¼ \në” ì¢‹ì•„í•˜ì§€ë¡±~";
 			
 		}
 		else if(myPercent==yourPercent)
 		{
-			result="Ãµ»ı¿¬ºĞÀÌ³× \n°áÈ¥ÇØ";
+			result="ì²œìƒì—°ë¶„ì´ë„¤ \nê²°í˜¼í•´";
 		}
 		else
 		{
-			result = yourName+"(ÀÌ)°¡ "+myName+"À»/¸¦ \n´õ ÁÁ¾ÆÇÏÁö·Õ~";
+			result = yourName+"(ì´)ê°€ "+myName+"ì„/ë¥¼ \në” ì¢‹ì•„í•˜ì§€ë¡±~";
 		}	
 
 		resultTxt.setText(result);

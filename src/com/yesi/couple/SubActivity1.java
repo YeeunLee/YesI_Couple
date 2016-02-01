@@ -60,19 +60,19 @@ public class SubActivity1 extends Activity {
 		
 		if(myName.getText().toString().equals(""))
 		{
-			Toast.makeText(getApplicationContext(), "´ç½ÅÀÇ ÀÌ¸§À» ¾²¼¼¿ä.", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "ë‹¹ì‹ ì˜ ì´ë¦„ì„ ì“°ì„¸ìš”.", Toast.LENGTH_LONG).show();
 		}
 		else if(myAge.getText().toString().equals(""))
 		{
-			Toast.makeText(getApplicationContext(), "´ç½ÅÀÇ ³ªÀÌ¸¦ ¾²¼¼¿ä.", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "ë‹¹ì‹ ì˜ ë‚˜ì´ë¥¼ ì“°ì„¸ìš”.", Toast.LENGTH_LONG).show();
 		}
 		else if(yourName.getText().toString().equals(""))
 		{
-			Toast.makeText(getApplicationContext(), "»ó´ë¹æÀÇ ÀÌ¸§À» ¾²¼¼¿ä.", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "ìƒëŒ€ë°©ì˜ ì´ë¦„ì„ ì“°ì„¸ìš”.", Toast.LENGTH_LONG).show();
 		}
 		else if(yourAge.getText().toString().equals(""))
 		{
-			Toast.makeText(getApplicationContext(), "»ó´ë¹æÀÇ ³ªÀÌ¸¦ ¾²¼¼¿ä.", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "ìƒëŒ€ë°©ì˜ ë‚˜ì´ë¥¼ ì“°ì„¸ìš”.", Toast.LENGTH_LONG).show();
 		}
 		else
 		{

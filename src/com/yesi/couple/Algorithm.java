@@ -3,11 +3,11 @@ package com.yesi.couple;
 public class Algorithm 
 {
 	public int[] chosungArr ={2, 4, 2, 3, 6, 5, 4, 4, 8, 2, 4, 1, 3, 6, 4, 3, 4, 4, 3};
-    			//            ¤¡ ¤¢ ¤¤ ¤§ ¤¨ ¤© ¤± ¤² ¤³ ¤µ ¤¶ ¤· ¤¸ ¤¹ ¤º ¤» ¤½ ¤¼ ¤¾
+    			//            ã„± ã„² ã„´ ã„· ã„¸ ã„¹ ã… ã…‚ ã…ƒ ã…… ã…† ã…‡ ã…ˆ ã…‰ ã…Š ã…‹ ã… ã…Œ ã…
     public int[] joongsungArr = {2, 3, 3, 4, 2, 3, 3, 4, 2, 4, 5, 3, 3, 2, 4, 5, 3, 3, 1, 2, 1};
-    				//             ¤¿ ¤À ¤Á ¤Â ¤Ã ¤Ä ¤Å ¤Æ ¤Ç ¤È ¤É ¤Ê ¤Ë ¤Ì ¤Í ¤Î ¤Ï ¤Ğ ¤Ñ ¤Ò ¤Ó
+    				//             ã… ã… ã…‘ ã…’ ã…“ ã…” ã…• ã…– ã…— ã…˜ ã…™ ã…š ã…› ã…œ ã… ã… ã…Ÿ ã…  ã…¡ ã…¢ ã…£
     public int[] jongsungArr = {0, 2, 4, 4, 2, 5, 5, 3, 5, 7, 9, 9, 7, 9, 9, 8, 4, 4, 6, 2, 4, 1, 3, 4, 3, 4, 4, 3};
-    			//             ¹« ¤¡ ¤¢ ¤£ ¤¤ ¤¥ ¤¦ ¤§ ¤© ¤ª ¤« ¤¬ ¤­ ¤® ¤¯ ¤° ¤± ¤² ¤´ ¤µ ¤¶ ¤· ¤¸ ¤º ¤» ¤¼ ¤½ ¤¾
+    			//             ë¬´ ã„± ã„² ã„³ ã„´ ã„µ ã„¶ ã„· ã„¹ ã„º ã„» ã„¼ ã„½ ã„¾ ã„¿ ã…€ ã… ã…‚ ã…„ ã…… ã…† ã…‡ ã…ˆ ã…Š ã…‹ ã…Œ ã… ã…
     
 	public Algorithm() {
 		// TODO Auto-generated constructor stub
@@ -97,46 +97,46 @@ public class Algorithm
 		
 		switch(couple)
 		{
-		case 0: result = "Æò»ı °¥»ç¶÷"; break;
-		case 1: result = "ÀÌº°ÇÏ±â ½¬¿ò"; break;
-		case 2: result = "2³âÀÌ»ó ¿À·¡°¨"; break;
-		case 3: result = "Áö±İ ¾ÖÀÎ°ú Æò»ı°¨"; break;
-		case 4: result = "Áø½ÇÇÑ »ç¶û"; break;
-		case 5: result = "Àı±³"; break;
-		case 6: result = "¾ÈÅ¸±õ°Ô ±â´Ù¸²"; break;
-		case 7: result = "¼­·Î »ç¶û"; break;
-		case 8: result = "È¥ÀÚ »ç¶û"; break;
-		case 9: result = "Á×¾î¼­µµ ÁÁ¾ÆÇØ"; break;
-		case 10: result = "ÁÁ¾ÆÇØ"; break;
-		case 11: result = "°ÅÁş »ç¶û"; break;
-		case 12: result = "½ÈÀ¸¸é¼­ ÁÁÀº°Í"; break;
-		case 13: result = "¸¶À½°ú Á¤¹İ´ë"; break;
-		case 14: result = "ÀÎ¿¬"; break;
-		case 15: result = "³²ÀÚ°¡ ¿©ÀÚ¶§¹®¿¡ ¿ò"; break;
-		case 16: result = "¹«ÁúÁÖ »ç¶û"; break;
-		case 17: result = "Àá½Ã ÁÁÀ½"; break;
-		case 18: result = "¿µ¿øÇÔ"; break;
-		case 19: result = "´Ù½Ã »ç±Ñ"; break;
-		case 20: result = "»ç¶ûÀ» À§ÇØ¼­¶ó¸é"; break;
-		case 21: result = "ÀÌº°"; break;
-		case 22: result = "¹Ì·¡ÀÇ Å°½º"; break;
-		case 23: result = "ÀØÀ» ¼ö ¾ø´Â »ç¶û"; break;
-		case 24: result = "¾ç´Ù¸®"; break;
-		case 25: result = "ÀÌÁ¦ °ğ µ¥ÀÌÆ®"; break;
-		case 26: result = "¼­·Î »ç¶û"; break;
-		case 27: result = "¿î¸íÀû ¸¸³²"; break;
-		case 28: result = "¿î¸íÀû ½Ç¼ö"; break;
-		case 29: result = "°áÈ¥°¡´É"; break;
-		case 30: result = "¿©ÀÚ°¡ ³²ÀÚÁ¶½É"; break;
-		case 31: result = "¿©ÀÚ°¡ ¾Æ±î¿ò"; break;
-		case 32: result = "³²ÀÚ°¡ ¿©ÀÚÁ¶½É"; break;
-		case 33: result = "³²ÀÚ°¡ Â¦»ç¶û"; break;
-		case 34: result = "¿©ÀÚ°¡ ³²ÀÚ¶§¹®¿¡ ¿ò"; break;
-		case 35: result = "±úÁö±â ½¬¿ò"; break;
-		case 36: result = "¾î¿ï¸®Áö ¾ÊÀ½"; break;
-		case 37: result = "³²ÀÚ°¡ ¾Æ±î¿ò"; break;
-		case 38: result = "¿©ÀÚ´Â ÁÁ¾ÆÇÏÁö¸¸ ³²ÀÚ°¡ ÁÁ¾ÆÇÏÁö ¾ÊÀ½"; break;
-		case 39: result = "¿©ÀÚ°¡ Â¦»ç¶û"; break;
+		case 0: result = "í‰ìƒ ê°ˆì‚¬ëŒ"; break;
+		case 1: result = "ì´ë³„í•˜ê¸° ì‰¬ì›€"; break;
+		case 2: result = "2ë…„ì´ìƒ ì˜¤ë˜ê°"; break;
+		case 3: result = "ì§€ê¸ˆ ì• ì¸ê³¼ í‰ìƒê°"; break;
+		case 4: result = "ì§„ì‹¤í•œ ì‚¬ë‘"; break;
+		case 5: result = "ì ˆêµ"; break;
+		case 6: result = "ì•ˆíƒ€ê¹ê²Œ ê¸°ë‹¤ë¦¼"; break;
+		case 7: result = "ì„œë¡œ ì‚¬ë‘"; break;
+		case 8: result = "í˜¼ì ì‚¬ë‘"; break;
+		case 9: result = "ì£½ì–´ì„œë„ ì¢‹ì•„í•´"; break;
+		case 10: result = "ì¢‹ì•„í•´"; break;
+		case 11: result = "ê±°ì§“ ì‚¬ë‘"; break;
+		case 12: result = "ì‹«ìœ¼ë©´ì„œ ì¢‹ì€ê²ƒ"; break;
+		case 13: result = "ë§ˆìŒê³¼ ì •ë°˜ëŒ€"; break;
+		case 14: result = "ì¸ì—°"; break;
+		case 15: result = "ë‚¨ìê°€ ì—¬ìë•Œë¬¸ì— ì›€"; break;
+		case 16: result = "ë¬´ì§ˆì£¼ ì‚¬ë‘"; break;
+		case 17: result = "ì ì‹œ ì¢‹ìŒ"; break;
+		case 18: result = "ì˜ì›í•¨"; break;
+		case 19: result = "ë‹¤ì‹œ ì‚¬ê·"; break;
+		case 20: result = "ì‚¬ë‘ì„ ìœ„í•´ì„œë¼ë©´"; break;
+		case 21: result = "ì´ë³„"; break;
+		case 22: result = "ë¯¸ë˜ì˜ í‚¤ìŠ¤"; break;
+		case 23: result = "ìŠì„ ìˆ˜ ì—†ëŠ” ì‚¬ë‘"; break;
+		case 24: result = "ì–‘ë‹¤ë¦¬"; break;
+		case 25: result = "ì´ì œ ê³§ ë°ì´íŠ¸"; break;
+		case 26: result = "ì„œë¡œ ì‚¬ë‘"; break;
+		case 27: result = "ìš´ëª…ì  ë§Œë‚¨"; break;
+		case 28: result = "ìš´ëª…ì  ì‹¤ìˆ˜"; break;
+		case 29: result = "ê²°í˜¼ê°€ëŠ¥"; break;
+		case 30: result = "ì—¬ìê°€ ë‚¨ìì¡°ì‹¬"; break;
+		case 31: result = "ì—¬ìê°€ ì•„ê¹Œì›€"; break;
+		case 32: result = "ë‚¨ìê°€ ì—¬ìì¡°ì‹¬"; break;
+		case 33: result = "ë‚¨ìê°€ ì§ì‚¬ë‘"; break;
+		case 34: result = "ì—¬ìê°€ ë‚¨ìë•Œë¬¸ì— ì›€"; break;
+		case 35: result = "ê¹¨ì§€ê¸° ì‰¬ì›€"; break;
+		case 36: result = "ì–´ìš¸ë¦¬ì§€ ì•ŠìŒ"; break;
+		case 37: result = "ë‚¨ìê°€ ì•„ê¹Œì›€"; break;
+		case 38: result = "ì—¬ìëŠ” ì¢‹ì•„í•˜ì§€ë§Œ ë‚¨ìê°€ ì¢‹ì•„í•˜ì§€ ì•ŠìŒ"; break;
+		case 39: result = "ì—¬ìê°€ ì§ì‚¬ë‘"; break;
 		default: break;
 		}
 
