@@ -20,6 +20,10 @@
         "source": "C:\\Users\\leeyeeun\\Desktop\\AndroidEx\\Couple\\res\\layout\\activity_sub1_history.xml"
     },
     {
+        "merged": "C:\\Users\\leeyeeun\\Desktop\\AndroidEx\\Couple\\build\\intermediates\\res\\merged\\debug\\layout\\listview.xml",
+        "source": "C:\\Users\\leeyeeun\\Desktop\\AndroidEx\\Couple\\res\\layout\\listview.xml"
+    },
+    {
         "merged": "C:\\Users\\leeyeeun\\Desktop\\AndroidEx\\Couple\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\leeyeeun\\Desktop\\AndroidEx\\Couple\\res\\layout\\activity_main.xml"
     },

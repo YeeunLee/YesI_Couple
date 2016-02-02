@@ -9,21 +9,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class OptionActivity extends Activity {
+public class OptionActivity extends ActivitySet {
 
 	Button[] buttons;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_option);
-
-		Typeface typeface = Typeface.createFromAsset(getAssets(), "NanumPen.ttf");
-		buttons = new Button[2];
-		buttons[0] = (Button)findViewById(R.id.history1btn);
-		buttons[1] = (Button)findViewById(R.id.history2btn);
-
-		buttons[0].setTypeface(typeface);
-		buttons[1].setTypeface(typeface);
 	}
 
 	@Override

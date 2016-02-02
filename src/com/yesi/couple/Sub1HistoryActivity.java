@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Sub1HistoryActivity extends Activity {
+public class Sub1HistoryActivity extends ActivitySet {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,21 +23,17 @@ public class Sub1HistoryActivity extends Activity {
 		final List<TableSub1> historyList = helper.selectAllSub1();
 		ArrayList<String> historyStrings = new ArrayList<String>();
 
-		for (TableSub1 tmp : historyList) {
+		TableSub1 tmp;
+		for (int i = historyList.size()-1;i>=0;i--) {
+			tmp = historyList.get(i);
 			historyStrings.add(tmp.getMyName() + " ♡ " + tmp.getYourName()
 					+ " = " + tmp.getResult());
 		}
 
-		final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, historyStrings){
-			@Override
-			public View getView(int position, View convertView, ViewGroup parent) {
+		final ArrayAdapterSet<String> adapter = new ArrayAdapterSet<String>(this,
+				R.layout.listview, historyStrings);
 
-				return super.getView(position, convertView, parent);
-			}
-		};
-
-		ListView listView = (ListView) findViewById(R.id.listView);
+		ListView listView = (ListView) findViewById(R.id.listView1);
 		listView.setAdapter(adapter);
 
 		SwipeDismissListViewTouchListener touchListener = new SwipeDismissListViewTouchListener(

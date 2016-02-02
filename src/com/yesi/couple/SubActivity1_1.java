@@ -20,7 +20,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class SubActivity1_1 extends Activity {
+public class SubActivity1_1 extends ActivitySet {
 
 	LinearLayout capLayout;
 

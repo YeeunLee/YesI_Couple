@@ -12,25 +12,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class SubActivity2 extends Activity {
-	TextView textViews[];
+public class SubActivity2 extends ActivitySet {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_sub2);
-		Typeface typeface = Typeface.createFromAsset(getAssets(), "NanumPen.ttf");
-		textViews = new TextView[4];
-		
-		textViews[0] = (TextView)findViewById(R.id.myNameTxt2);		
-		textViews[1] = (TextView)findViewById(R.id.myAgeTxt2);		
-		textViews[2] = (TextView)findViewById(R.id.yourNameTxt2);		
-		textViews[3] = (TextView)findViewById(R.id.yourAgeTxt2);
-
-		textViews[0].setTypeface(typeface);
-		textViews[1].setTypeface(typeface);
-		textViews[2].setTypeface(typeface);
-		textViews[3].setTypeface(typeface);
-	}
+		}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

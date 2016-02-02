@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class SubActivity2_1 extends Activity {
+public class SubActivity2_1 extends ActivitySet {
 
 	private TextView resultTxt;
 	private String myName;
@@ -38,7 +38,7 @@ public class SubActivity2_1 extends Activity {
 		}
 		else if(myPercent==yourPercent)
 		{
-			result="천생연분이네 \n결혼해";
+			result= myName+"와 "+yourName+"는 천생연분이네 \n결혼해";
 		}
 		else
 		{

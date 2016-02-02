@@ -21,14 +21,14 @@ public class Sub2HistoryActivity extends Activity {
 		final List<TableSub2> historyList = helper.selectAllSub2();
 		ArrayList<String> historyStrings = new ArrayList<String>();
 
-		for (TableSub2 tmp : historyList) {
-			historyStrings.add(tmp.getMyName() + " ♡ " + tmp.getYourName()
-					+ " = " + tmp.getResult());
+		TableSub2 tmp;
+		for (int i = historyList.size()-1;i>=0;i--) {
+			tmp = historyList.get(i);
+			historyStrings.add( tmp.getResult());
 		}
-		
 
-		final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, historyStrings);
+		final ArrayAdapterSet<String> adapter = new ArrayAdapterSet<String>(this,
+				R.layout.listview, historyStrings);
 
 		ListView listView = (ListView) findViewById(R.id.listView2);
 		listView.setAdapter(adapter);
