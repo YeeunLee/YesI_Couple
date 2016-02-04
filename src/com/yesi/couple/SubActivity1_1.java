@@ -35,8 +35,13 @@ public class SubActivity1_1 extends ActivitySet {
 		Algorithm al = new Algorithm();
 		String result = al.message(myName, yourName);
 
-		resultTxt.setText(myName + "과 " + yourName + "은\n" + result);
-
+		if(result.equals(""))
+		{
+			resultTxt.setText("한글 이름을 입력하세요.");
+		}
+		else {
+			resultTxt.setText(myName + "과 " + yourName + "은\n" + result);
+		}
 		SQLiteDBListHelper helper = new SQLiteDBListHelper(this);
 
 		helper.insertSub1(new TableSub1(myName, yourName, result));

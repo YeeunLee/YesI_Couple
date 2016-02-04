@@ -21,7 +21,11 @@ public class Algorithm
 		int joongsung = 0;
 		int jongsung = 0;
 		int result = 0;
-		
+
+		if((int)c<44032||(int)c>55204)
+		{
+			return -1;
+		}
 		letter = (int)c-44032;
 			
 		chosung = letter/(21*28);
@@ -39,28 +43,50 @@ public class Algorithm
 		int yourNameLength = yourName.length();
 		int totalLength = myNameLength+yourNameLength;
 		int[] arr = new int[totalLength];
-		
+		int tmp = 0;
+
 		for(int i = 0;i<myNameLength;i++)
 		{
 			if(i<yourNameLength)
 			{
-				arr[i*2] = strokeCount(myName.charAt(i));
+				tmp = strokeCount(myName.charAt(i));
+				if(tmp!=-1) {
+					arr[i * 2] = tmp;
+				}
+				else
+				{
+					return -1;
+				}
 			}
 			else
 			{
-				arr[yourNameLength+i] = strokeCount(myName.charAt(i));
+				tmp = strokeCount(myName.charAt(i));
+				if(tmp!=-1) {
+					arr[yourNameLength+i] = tmp;
+				}
+				else
+				{
+					return -1;
+				}
 			}
 		}
 		
 		for(int i = 0;i<yourNameLength;i++)
 		{
-			if(i<myNameLength)
-			{
-				arr[i*2+1] = strokeCount(yourName.charAt(i));
+			if(i<myNameLength) {
+				tmp = strokeCount(yourName.charAt(i));
+				if (tmp != -1) {
+					arr[i * 2 + 1] = tmp;
+				}
+				else {return -1;}
 			}
 			else
 			{
-				arr[myNameLength+i] = strokeCount(yourName.charAt(i));
+				tmp = strokeCount(yourName.charAt(i));
+				if (tmp != -1) {
+					arr[myNameLength+i] = tmp;
+				}
+				else {return -1;}
 			}
 		}
 		
@@ -79,15 +105,30 @@ public class Algorithm
 	public String message(String myName,String yourName)
 	{
 		int couple = 0;
+		int tmp = 0;
 
 		for(int i = 0;i <myName.length();i++)
 		{
-			couple += strokeCount(myName.charAt(i));
+			tmp = strokeCount(myName.charAt(i));
+			if(tmp!=-1) {
+				couple += tmp;
+			}
+			else
+			{
+				return "";
+			}
 		}
 
 		for(int i = 0;i <yourName.length();i++)
 		{
-			couple += strokeCount(yourName.charAt(i));
+			tmp = strokeCount(yourName.charAt(i));
+			if(tmp!=-1) {
+				couple += tmp;
+			}
+			else
+			{
+				return "";
+			}
 		}
 
 		String result="";

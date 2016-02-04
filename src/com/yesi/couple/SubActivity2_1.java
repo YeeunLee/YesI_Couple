@@ -30,8 +30,12 @@ public class SubActivity2_1 extends ActivitySet {
 		String result;
 
 		SQLiteDBListHelper helper = new SQLiteDBListHelper(this);
-		
-		if(myPercent>yourPercent)
+
+		if(myPercent==-1||yourPercent==-1)
+		{
+			result = "한글이름을 입력하세요.";
+		}
+		else if(myPercent>yourPercent)
 		{
 			result = myName+"(이)가 "+yourName+"을/를 \n더 좋아하지롱~";
 			
