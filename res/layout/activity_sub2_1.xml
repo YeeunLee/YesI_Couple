@@ -14,7 +14,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical" 
         android:weightSum="8"
-        android:gravity="center|bottom">
+        android:gravity="center|bottom"
+        android:id="@+id/linearLayout2">
 
         <TextView
             android:id="@+id/percentTxt"
@@ -30,9 +31,20 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2" >
+
         </FrameLayout>
 
     </LinearLayout>
 
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="공유하기"
+        android:id="@+id/shareBtn2"
+        android:onClick="onClickCaptureBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:layout_marginBottom="40dp"/>
 
 </RelativeLayout>
