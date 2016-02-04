@@ -43,7 +43,7 @@ public class Sub2HistoryActivity extends Activity {
 						// TODO Auto-generated method stub
 						for (int position : reverseSortedPositions) {
 							adapter.remove(adapter.getItem(position));
-							helper.deleteSub2(historyList.get(position));
+							helper.deleteSub2(historyList.get(historyList.size()-1-position));
 						}
 						adapter.notifyDataSetChanged();
 						

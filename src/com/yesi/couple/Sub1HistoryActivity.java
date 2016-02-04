@@ -45,8 +45,8 @@ public class Sub1HistoryActivity extends ActivitySet {
 							int[] reverseSortedPositions) {
 						// TODO Auto-generated method stub
 						for (int position : reverseSortedPositions) {
+							helper.deleteSub1(historyList.get(historyList.size() - 1 - position));
 							adapter.remove(adapter.getItem(position));
-							helper.deleteSub1(historyList.get(position));
 						}
 						adapter.notifyDataSetChanged();
 						
