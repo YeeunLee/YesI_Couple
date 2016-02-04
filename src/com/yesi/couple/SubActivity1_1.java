@@ -35,8 +35,8 @@ public class SubActivity1_1 extends ActivitySet {
 		Algorithm al = new Algorithm();
 		String result = al.message(myName, yourName);
 
-		Button button = (Button) findViewById(R.id.captureBtn);
-		capLayout = (LinearLayout) findViewById(R.id.linearLayout);
+		Button button = (Button) findViewById(R.id.shareBtn1);
+		capLayout = (LinearLayout) findViewById(R.id.linearLayout1);
 
 		if(result.equals(""))
 		{
