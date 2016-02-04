@@ -29,11 +29,10 @@ public class SubActivity2_1 extends ActivitySet {
 		int yourPercent = al.percent(yourName, myName);
 		String result;
 
-		SQLiteDBListHelper helper = new SQLiteDBListHelper(this);
-
 		if(myPercent==-1||yourPercent==-1)
 		{
-			result = "한글이름을 입력하세요.";
+			resultTxt.setText( "한글이름을 입력하세요.");
+			return;
 		}
 		else if(myPercent>yourPercent)
 		{
@@ -50,6 +49,8 @@ public class SubActivity2_1 extends ActivitySet {
 		}	
 
 		resultTxt.setText(result);
+
+		SQLiteDBListHelper helper = new SQLiteDBListHelper(this);
 		helper.insertSub2(new TableSub2(myName,yourName,result));
 	}
 

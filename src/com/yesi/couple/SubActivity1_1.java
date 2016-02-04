@@ -35,9 +35,13 @@ public class SubActivity1_1 extends ActivitySet {
 		Algorithm al = new Algorithm();
 		String result = al.message(myName, yourName);
 
+		Button button = (Button) findViewById(R.id.captureBtn);
+		capLayout = (LinearLayout) findViewById(R.id.linearLayout);
+
 		if(result.equals(""))
 		{
 			resultTxt.setText("한글 이름을 입력하세요.");
+			return;
 		}
 		else {
 			resultTxt.setText(myName + "과 " + yourName + "은\n" + result);
@@ -46,8 +50,6 @@ public class SubActivity1_1 extends ActivitySet {
 
 		helper.insertSub1(new TableSub1(myName, yourName, result));
 
-		Button button = (Button) findViewById(R.id.captureBtn);
-		capLayout = (LinearLayout) findViewById(R.id.linearLayout);
 
 	}
 
